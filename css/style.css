@@ -1,12 +1,12 @@
+:root {
+    --btn-color: #2A94E2;
+    --text-color: #000000;
+}
+
 body {
     font-family: 'Geometria', serif;
     font-weight: 400;
     color: var(--text-color);
-}
-
-:root {
-    --btn-color: #2A94E2;
-    --text-color: #000000;
 }
 
 .header {
@@ -23,8 +23,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0 ;
+    padding: 30px 0;
 }
+
 .header__menu {
     display: flex;
     align-items: center;
@@ -68,7 +69,6 @@ body {
     line-height: 26px;
     margin-left: 30px;
 }
-
 
 .header__desc {
     display: flex;
@@ -159,4 +159,94 @@ body {
     background-color: var(--btn-color);
     color: #ffffff;
     margin-bottom: 50px;
+}
+
+.choose__location {
+    margin-top: 60px;
+}
+
+.location__title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location__subtitle {
+    font-size: 23px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.choose__location {
+    /*border: 3px solid #F6F6F6;*/
+    /*padding: 40px 35px;*/
+    display: flex;
+    align-items: center;
+}
+
+.choose__sections {
+    border: 3px solid #F6F6F6;
+    padding: 40px 30px 30px 35px;
+}
+
+.choose__title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+
+.choose__images {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #F1F1F1;
+}
+
+.choose__item {
+    text-align: center;
+}
+.choose__item:last-child{
+    margin-left: 30px;
+}
+
+.image__info {
+    font-size: 16px;
+    color: #808080;
+    font-weight: 600;
+}
+
+.choose__more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.choose_questions {
+    margin: 0;
+}
+
+.choose__list {
+    border: 3px solid #F6F6F6;
+    border-left: 0;
+    padding: 31px 35px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.choose__items:before {
+    content: "";
+    background: url("../images/choose__icon.png") no-repeat center center/cover;
+    width: 39px;
+    height: 35px;
+    display: inline-block;
+}
+
+.choose__items {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 15px 25px;
+}
+
+.choose__icon {
+
 }
