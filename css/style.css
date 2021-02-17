@@ -1,0 +1,162 @@
+body {
+    font-family: 'Geometria', serif;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+:root {
+    --btn-color: #2A94E2;
+    --text-color: #000000;
+}
+
+.header {
+    background: url("../images/header__img.png") no-repeat center center/cover;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 ;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.burger__lines {
+    margin-right: 20px;
+}
+
+.burger__line {
+    width: 40px;
+    height: 3px;
+    display: block;
+    background: var(--btn-color);
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.burger__line:nth-child(2) {
+    width: 30px;
+}
+
+.burger__line:nth-child(3) {
+    width: 20px;
+}
+
+.burger__menu {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.header__info {
+    max-width: 195px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 30px;
+}
+
+
+.header__desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__tel {
+    font-size: 30px;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.header__btn {
+    justify-content: center;
+}
+
+.btn {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-flex;
+    padding: 17px 22px;
+    border: 1px solid var(--btn-color);
+    border-radius: 5px;
+}
+
+.header__title {
+    max-width: 595px;
+    width: 100%;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.header__subtitle {
+    max-width: 560px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+.header__aboutUs {
+    display: flex;
+    max-width: 830px;
+    width: 100%;
+}
+
+.about__item {
+    display: flex;
+    align-items: center;
+}
+
+.about__item:nth-child(2) {
+    margin: 0 50px;
+}
+
+.item__num {
+    font-size: 80px;
+}
+
+.item__desc {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.header__gift {
+    display: flex;
+    align-items: center;
+    margin: 43px 0;
+}
+
+.gift__desc {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 376px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.gift__bDesc {
+    font-weight: 600;
+}
+
+.header__chooseBtn {
+    background-color: var(--btn-color);
+    color: #ffffff;
+    margin-bottom: 50px;
+}
