@@ -169,6 +169,7 @@ body {
     font-size: 35px;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .location__subtitle {
@@ -178,8 +179,6 @@ body {
 }
 
 .choose__location {
-    /*border: 3px solid #F6F6F6;*/
-    /*padding: 40px 35px;*/
     display: flex;
     align-items: center;
 }
@@ -271,6 +270,28 @@ body {
     display: flex;
 }
 
-.choose__icon {
+.services__title {
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
 
+.services__gallery {
+    position: relative;
+    align-items: start;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__img {
+    margin-top: 10px;
+}
+
+.services__img:nth-child(4) {
+    position: absolute;
+    right: 0;
+    bottom: 310px;
 }
