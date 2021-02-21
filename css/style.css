@@ -295,3 +295,132 @@ body {
     right: 0;
     bottom: 310px;
 }
+
+.apartament__title {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.apartaments__subtitle {
+    font-size: 22px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.apartaments__show {
+    border: 2px solid #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.show__btn {
+    display: inline;
+    padding: 20px 57px;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--text-color);
+    border-right: 3px solid #F6F6F6;
+    text-align: center;
+}
+
+.show__btn:active,
+.active {
+    background: var(--btn-color);
+    color: #ffffff;
+}
+
+.show__btn:hover {
+    background: #F6F6F6;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+.show__btn:last-child{
+    border: none;
+}
+
+.apartaments__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.apartament__item {
+    border: 1px solid #F6F6F6;
+    margin-top: 30px;
+}
+
+.apartament__item:hover {
+    box-shadow: 0px 0px 18px rgba(233, 80, 79, 0.25);
+    transition: 0.2s ease-in-out;
+}
+
+.item__title {
+    font-size: 22px;
+    padding: 0 30px;
+}
+
+.item__number {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 30px;
+}
+
+.item__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item__prices {
+
+}
+
+.item__price {
+    font-size: 33px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.item__priceInfo {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.item__info {
+    padding: 0 30px;
+}
+
+.item__floor {
+    margin: 0;
+}
+
+.item__area {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 34px;
+}
+
+.item__btn {
+    margin-top: 15px;
+    display: inline-flex;
+    text-decoration: none;
+    background: #F6F6F6;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.item__btn:hover {
+    background-color: var(--btn-color);
+    color: #ffffff;
+    transition: 0.2s;
+}
