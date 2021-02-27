@@ -120,3 +120,23 @@ data.map(element => {
     </div>
     <a href = "#" class="item__btn">${element.btn}</a>`
 })
+
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+
+const aboutUsImg = document.querySelector(".aboutUs__img")
+const aboutUsImages = document.querySelector(".aboutUs__images")
+
+for(let i = 2; i <= 5; i++) {
+    const newImg = document.createElement("img")
+    newImg.setAttribute("src", "images/ourOffice__img" + i + ".png")
+    aboutUsImages.appendChild(newImg)
+    newImg.onclick = function(e) {
+        aboutUsImg.src = e.target.src
+    }
+}
