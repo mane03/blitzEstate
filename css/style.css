@@ -278,23 +278,107 @@ body {
     margin-bottom: 30px;
 }
 
-.services__gallery {
-    position: relative;
-    align-items: start;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
+.img__container {
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:"one two three"
+                        "one four four"
+                        "five five six";
+    column-gap: 10px;
+    row-gap: 10px;
 }
+
+
+.img__info {
+    padding-left: 20px;
+    padding-bottom: 16px;
+}
+
+.img__title {
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.img__hover{
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10px;
+    position:absolute;
+    visibility:hidden;
+    background:rgba(0, 0, 0, 0.43);
+    font-size:20px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    top:160px
+}
+
 
 .services__img {
-    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+    position:relative;
 }
 
-.services__img:nth-child(4) {
-    position: absolute;
-    right: 0;
-    bottom: 310px;
+.services__img:hover .img__hover {
+    visibility:visible;
+    transition:1s;
+    transform:translatey(-160px);
 }
+
+.img__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.img__btn {
+    background: var(--btn-color);
+    color: #FFFFFF;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 20px 100px;
+    border-radius: 5px ;
+    margin-bottom: 20px;
+}
+
+.one {
+    grid-area: one;
+    background: url("../images/services__img1.png")no-repeat center center/cover;
+}
+
+.two {
+    grid-area: two;
+    background: url("../images/services__img2.png")no-repeat center center/cover;
+}
+
+.three {
+    grid-area: three;
+    background: url("../images/services__img3.png")no-repeat center center/cover;
+}
+
+.four {
+    grid-area: four;
+    background: url("../images/services__img4.png")no-repeat center center/cover;
+}
+
+.five {
+    grid-area: five;
+    background: url("../images/services__img5.png")no-repeat center center/cover;
+}
+
+.six {
+    grid-area: six;
+    background: url("../images/services__img6.png")no-repeat center center/cover;
+}
+
+
 
 .apartament__title {
     font-size: 35px;
